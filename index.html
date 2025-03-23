@@ -51,9 +51,6 @@
         <ul>
           <li><a href="#" onclick="highlightMenuItem(event)">Home</a></li>
           <li>
-            <a href="#hackathon" onclick="highlightMenuItem(event)">HACKATHON</a>
-          </li>
-          <li>
             <a href="#mission-spacer" onclick="highlightMenuItem(event)">About</a>
           </li>
           <li>
@@ -73,37 +70,40 @@
       <div class="content">
         <div class="content-left">
           <h1>
-            The <span class="tech-community">Tech Community </span>at NYU Abu
-            Dhabi
+            The <span class="tech-community">Tech Community </span>at NYU Abu Dhabi
           </h1>
-          <a
-            href="https://engage.nyuad.nyu.edu/organization/hackad"
-            class="btn btn-white btn- animate"
-            target="_blank"
-            >Join</a
+          <!-- Buttons container: two centered buttons -->
+          <div
+            class="buttons-container"
+            style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;"
           >
+            <a
+              href="https://engage.nyuad.nyu.edu/organization/hackad"
+              class="btn btn-white btn-animate"
+              target="_blank"
+              >Join</a
+            >
+            <a
+              href="https://engage.nyuad.nyu.edu/organization/hackad"
+              class="btn btn-white btn-animate"
+              target="_blank"
+              >Join the Hackathon</a
+            >
+          </div>
+          <!-- Horizontal bubble container for the image -->
+          <div
+            class="horizontal-bubble"
+            style="margin: 20px auto; width: 90%; padding: 10px; background: rgba(255, 255, 255, 0.1); border-radius: 20px;"
+          >
+            <img
+              src="images/horizontal-placeholder.png"
+              alt="Horizontal Placeholder Image"
+              style="width: 100%; display: block;"
+            />
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Hackathon Section -->
-    <section id="hackathon">
-      <div class="hackathon-container">
-        <div class="hackathon-image">
-          <img
-            src="images/hackathon-placeholder.png"
-            alt="Hackathon Placeholder Image"
-          />
-        </div>
-        <div class="hackathon-content">
-          <h1>Hackathon</h1>
-          <p>
-            This is a placeholder section for Hackathon details. Stay tuned for
-            upcoming events and more information!
-          </p>
-        </div>
-      </div>
-    </section>
 
     <div id="mission-spacer"></div>
     <section class="container">
@@ -139,6 +139,7 @@
         </div>
       </div>
     </section>
+
     <div id="archive-page">
       <div id="spacer"></div>
       <section class="past-event-sct" id="past-event-sct">
@@ -152,82 +153,7 @@
         </div>
 
         <div class="past-event-container" id="past-event-container">
-          <div id="events-spring2024">
-            <img src="images/spring2024_0.png" alt="" />
-            <img src="images/spring2024_1.png" alt="" />
-            <img src="images/spring2024_2_.png" alt="" />
-            <img src="images/spring2024_3.png" alt="" />
-            <img src="images/spring2024_4.png" alt="" />
-            <img src="images/spring2024_5.png" alt="" />
-          </div>
-          <div id="events-fall2023">
-            <img src="images/fall2023_1.png" alt="" />
-          </div>
-          <div id="events-spring2023">
-            <img src="images/spring2023_1.png" alt="" />
-            <img src="images/spring2023_2.jpg" alt="" />
-            <img src="images/spring2023_3.jpg" alt="" />
-            <img src="images/spring2023_4.jpg" alt="" />
-          </div>
-          <div id="events-fall2022">
-            <img src="images/fall2022_1.png" alt="" />
-            <img src="images/fall2022_2.jpeg" alt="" />
-            <img src="images/fall2022_3.png" alt="" />
-            <img src="images/fall2022_4.png" alt="" />
-          </div>
-          <div id="events-spring2022">
-            <img src="images/spring2022_1.jpeg" alt="" />
-            <img src="images/spring2022_2.png" alt="" />
-          </div>
-          <div id="events-fall2021">
-            <img src="images/fall2021_1.png" alt="" />
-            <img src="images/fall2021_2.jpeg" alt="" />
-            <img src="images/fall2021_3.jpeg" alt="" />
-            <img src="images/fall2021_5.jpeg" alt="" />
-            <img src="images/fall2021_6.png" alt="" />
-            <img src="images/fall2021_4.jpeg" alt="" />
-            <img src="images/fall2021_7.png" alt="" />
-            <img src="images/fall2021_8.png" alt="" />
-          </div>
-          <div id="events-spring2021">
-            <img src="images/spring2021_1.jpg" alt="" />
-            <img src="images/spring2021_2.jpg" alt="" />
-            <img src="images/spring2021_3.png" alt="" />
-            <img src="images/spring2021_4.jpeg" alt="" />
-            <img src="images/spring2021_5.jpeg" alt="" />
-            <img src="images/spring2021_6.jpeg" alt="" />
-          </div>
-          <div id="events-fall2020">
-            <img src="images/fall2020_1.jpg" alt="" />
-            <img src="images/fall2020_2.jpg" alt="" />
-            <img src="images/fall2020_3.png" alt="" />
-            <img src="images/fall2020_4.jpeg" alt="" />
-          </div>
-          <div id="events-spring2020">
-            <img src="images/spring2020_1.jpg" alt="" />
-            <img src="images/spring2020_2.png" alt="" />
-          </div>
-          <div id="events-fall2019">
-            <img src="images/fall2019_1.jpg" alt="" />
-            <img src="images/fall2019_2.jpeg" alt="" />
-          </div>
-          <div id="events-spring2019">
-            <img src="images/spring2019_1.jpeg" alt="" />
-            <img src="images/spring2019_2.jpeg" alt="" />
-            <img src="images/spring2019_3.jpeg" alt="" />
-            <img src="images/spring2019_4.jpeg" alt="" />
-          </div>
-          <div id="events-fall2018">
-            <img src="images/fall2018_1.png" alt="" />
-            <img src="images/fall2018_2.png" alt="" />
-            <img src="images/fall2018_3.png" alt="" />
-            <img src="images/fall2018_4.jpeg" alt="" />
-            <img src="images/fall2018_5.jpeg" alt="" />
-          </div>
-          <div id="events-spring2018">
-            <img src="images/spring2018_1.jpeg" alt="" />
-            <img src="images/spring2018_2.jpeg" alt="" />
-          </div>
+          <!-- Past event images go here -->
         </div>
       </section>
 
@@ -286,6 +212,7 @@
           </section>
         </div>
       </section>
+
       <section class="contact-sct" id="contact-sct">
         <div class="contact-container" id="contact-container">
           <h1 id="contact-heading"></h1>
@@ -314,6 +241,7 @@
           </div>
         </div>
       </section>
+
       <section class="footer-sct">
         <div class="footer-container">
           <p>© HackAD 2024<br /></p>
