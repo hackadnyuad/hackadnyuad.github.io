@@ -8,35 +8,37 @@
     <title>hackAD</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-    <!-- Fonts omitted for brevity -->
-    <style>
-      /* Example minimal styling (ideally move to style.css) */
-      #landing-page {
-        text-align: center;
-        padding: 100px 0; /* space above/below entire landing area */
-      }
-      #landing-page h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-      }
-      #landing-page .join-btn {
-        padding: 12px 24px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        /* Additional button styles as needed */
-      }
-      .horizontal-bubble {
-        margin: 150px auto 0 auto; /* 150px top margin */
-        max-width: 80%;           /* or 90%, etc. */
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-        overflow: hidden;         /* ensures rounded corners on the image */
-      }
-      .horizontal-bubble img {
-        width: 100%;
-        display: block;
-      }
-    </style>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:900,500,200,100"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:900,500,200,100"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Outfit:700,900,300,200,100"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Touche:700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:700"
+      rel="stylesheet"
+    />
+    <style></style>
   </head>
   <body>
     <header>
@@ -64,29 +66,45 @@
       </div>
     </header>
 
-    <!-- LANDING PAGE SECTION -->
     <div id="landing-page">
-      <h1>
-        The <span class="tech-community">Tech Community</span> at NYU Abu Dhabi
-      </h1>
-      <a
-        href="https://engage.nyuad.nyu.edu/organization/hackad"
-        class="btn btn-white btn-animate join-btn"
-        target="_blank"
-      >
-        Join the Hackathon
-      </a>
-
-      <div class="horizontal-bubble">
-        <img
-          src="images/horizontal-placeholder.png"
-          alt="Horizontal Placeholder Image"
-        />
+      <div class="content">
+        <div class="content-left">
+          <h1>
+            The <span class="tech-community">Tech Community </span>at NYU Abu Dhabi
+          </h1>
+          <!-- Vertically stacked centered buttons -->
+          <div
+            class="buttons-container"
+            style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 20px;"
+          >
+            <a
+              href="https://engage.nyuad.nyu.edu/organization/hackad"
+              class="btn btn-white btn-animate"
+              target="_blank"
+              >Join</a
+            >
+            <a
+              href="https://engage.nyuad.nyu.edu/organization/hackad"
+              class="btn btn-white btn-animate"
+              target="_blank"
+              >Join the Hackathon</a
+            >
+          </div>
+          <!-- Horizontal transparent bubble container for the image -->
+          <div
+            class="horizontal-bubble"
+            style="margin: 20px auto; width: 90%; padding: 10px; background: rgba(255, 255, 255, 0.1); border-radius: 20px;"
+          >
+            <img
+              src="images/horizontal-placeholder.png"
+              alt="Horizontal Placeholder Image"
+              style="width: 100%; display: block;"
+            />
+          </div>
+        </div>
       </div>
     </div>
-    <!-- END LANDING PAGE SECTION -->
 
-    <!-- REST OF YOUR PAGE (unchanged) -->
     <div id="mission-spacer"></div>
     <section class="container">
       <section class="mission-sct" id="mission-sct">
@@ -104,7 +122,6 @@
         </div>
       </section>
     </section>
-
 
     <section class="details-sct" id="details-sct">
       <div class="details-info">
