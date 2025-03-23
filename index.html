@@ -38,7 +38,28 @@
       href="https://fonts.googleapis.com/css?family=Poppins:700"
       rel="stylesheet"
     />
-    <style></style>
+    <style>
+      /* Example: Minimal extra styling (ideally move this into style.css) */
+      .buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 80px; /* Increase to lower buttons further */
+      }
+      .horizontal-bubble {
+        /* 80px top margin separates bubble from buttons */
+        margin: 80px auto 0 auto;
+        width: 90%;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+      }
+      .horizontal-bubble img {
+        width: 100%;
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -70,35 +91,30 @@
       <div class="content">
         <div class="content-left">
           <h1>
-            The <span class="tech-community">Tech Community </span>at NYU Abu Dhabi
+            The <span class="tech-community">Tech Community</span> at NYU Abu Dhabi
           </h1>
-          <!-- Vertically stacked centered buttons -->
-          <div
-            class="buttons-container"
-            style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 20px;"
-          >
+          <!-- Vertically stacked, centered buttons (now lowered with margin-top: 80px) -->
+          <div class="buttons-container">
             <a
               href="https://engage.nyuad.nyu.edu/organization/hackad"
               class="btn btn-white btn-animate"
               target="_blank"
-              >Join</a
             >
+              Join
+            </a>
             <a
               href="https://engage.nyuad.nyu.edu/organization/hackad"
               class="btn btn-white btn-animate"
               target="_blank"
-              >Join the Hackathon</a
             >
+              Join the Hackathon
+            </a>
           </div>
           <!-- Horizontal transparent bubble container for the image -->
-          <div
-            class="horizontal-bubble"
-            style="margin: 20px auto; width: 90%; padding: 10px; background: rgba(255, 255, 255, 0.1); border-radius: 20px;"
-          >
+          <div class="horizontal-bubble">
             <img
               src="images/perplexity.png"
               alt="Horizontal Placeholder Image"
-              style="width: 100%; display: block;"
             />
           </div>
         </div>
