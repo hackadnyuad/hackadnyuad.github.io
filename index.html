@@ -39,17 +39,20 @@
       rel="stylesheet"
     />
     <style>
-      /* Example: Minimal extra styling (ideally move this into style.css) */
+      /* Inline styles for demo purposes. Move to style.css as needed. */
       .buttons-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-top: 80px; /* Increase to lower buttons further */
+        text-align: center;
+        margin-top: 80px; /* Adjust this value to lower/raise the button */
+      }
+      .buttons-container a {
+        padding: 12px 24px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border: 2px solid #fff; /* Example button styling */
+        border-radius: 5px;
       }
       .horizontal-bubble {
-        /* 80px top margin separates bubble from buttons */
-        margin: 80px auto 0 auto;
+        margin: 150px auto 0 auto; /* 150px top margin to detach from button */
         width: 90%;
         padding: 10px;
         background: rgba(255, 255, 255, 0.1);
@@ -93,15 +96,8 @@
           <h1>
             The <span class="tech-community">Tech Community</span> at NYU Abu Dhabi
           </h1>
-          <!-- Vertically stacked, centered buttons (now lowered with margin-top: 80px) -->
+          <!-- Single join button, centered -->
           <div class="buttons-container">
-            <a
-              href="https://engage.nyuad.nyu.edu/organization/hackad"
-              class="btn btn-white btn-animate"
-              target="_blank"
-            >
-              Join
-            </a>
             <a
               href="https://engage.nyuad.nyu.edu/organization/hackad"
               class="btn btn-white btn-animate"
@@ -110,7 +106,7 @@
               Join the Hackathon
             </a>
           </div>
-          <!-- Horizontal transparent bubble container for the image -->
+          <!-- Horizontal bubble container for the image -->
           <div class="horizontal-bubble">
             <img
               src="images/perplexity.png"
